@@ -1,4 +1,4 @@
-BetterNotepad
+# BetterNotepad
 
 A modern multi-purpose Windows editor built with WPF and C#.
 
