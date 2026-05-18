@@ -1,0 +1,18 @@
+{
+  "Name": "Example Image Theme",
+  "WindowBackground": "#1E1E1E",
+  "MenuBackground": "#D9D9D9",
+  "MenuText": "#000000",
+  "EditorBackground": "#807396",
+  "EditorText": "#FFFFFF",
+  "EditorBackgroundImage": "Example_image.svg.png",
+  "EditorBackgroundImageStretch": "UniformToFill",
+  "EditorBackgroundImageOpacity": 0.30,
+  "StatusBackground": "#E5E5E5",
+  "StatusText": "#000000",
+  "LineNumberBackground": "#F0F0F0",
+  "LineNumberText": "#A020F0",
+  "OutputBackground": "#000000",
+  "OutputHeaderBackground": "#000000",
+  "OutputText": "#000000"
+}
