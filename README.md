@@ -1,137 +1,100 @@
 # BetterNotepad
 
-A modern multi-purpose Windows editor built with WPF and C#.
+BetterNotepad is a modern Windows text editor and lightweight code editor built with WPF and .NET.
+It combines classic notepad simplicity with advanced editing tools, extension support, image viewing, folder management, and built-in developer utilities.
 
-BetterNotepad started as a lightweight notepad replacement, but evolved into a powerful editor capable of handling code, images, videos, themes, HTML previews, tabs, and more — all inside a clean desktop application.
+---
 
-And i made sure that copilot is non-exsistant :3, also im going to be adding more stuff to it and im open to suggestions :]
+## Features
 
-Features
-Modern tabbed interface
-BetterNotepad mode
-CodeEditor mode
-Syntax highlighting
-HTML live preview
-Image viewer
-Video player
-Drag & drop file support
-Autosave
-Custom themes
-Image background themes
-Explorer context menu integration
-Single-window multi-tab workflow
-File type detection
-Built with WPF + .NET 8
-Supported File Types
-Text / Code
-.txt
-.html
-.htm
-.cs
-.cpp
-.h
-.js
-.py
-.lua
-Images
-.png
-.jpg
-.jpeg
-.bmp
-.gif
-.tif
-.tiff
-.webp
-.ico
-.nef (partial support depending on Windows codecs)
-Videos
-.mp4
-.wmv
-.avi
-.mov
-.mkv
-.webm
-.m4v
-Screenshots
+* Multi-tab text and code editing
+* Syntax highlighting
+* Lua, C#, Python, HTML, JavaScript, and more
+* Image and video viewing support
+* Custom themes and font settings
+* HTML live preview
+* Folder manager support
+* Extension system using DLL plugins
+* Modern dark UI
+* "Open With BetterNotepad" Windows integration
+* Self-contained Windows builds
 
-Add screenshots here later.
+---
 
-Themes
+## Included Extensions
 
-BetterNotepad supports fully customizable themes.
+### BetterPhoto
 
-Themes are stored as:
+Advanced image editing extension featuring:
 
-Themes/*.bntheme
+* Drawing and painting tools
+* Brush types
+* Eraser tool
+* Undo support
+* Zoom controls
+* Brightness adjustment
+* Contrast adjustment
+* Saturation controls
+* Warm/Cool filters
+* Vintage presets
+* Export edited images
 
-Themes can:
+---
 
-change colors
-change text colors
-customize menus
-customize status bars
-use image backgrounds
-control image opacity/stretching
+### BetterTerminal
 
-Example:
+Integrated PowerShell terminal extension featuring:
 
-{
-  "Name": "My Theme",
-  "EditorBackground": "#232323",
-  "EditorText": "#FFFFFF",
-  "EditorBackgroundImage": "background.png",
-  "EditorBackgroundImageOpacity": 0.25
-}
+* Built-in PowerShell execution
+* Live command output
+* Console-style interface
+* Dark themed terminal UI
+* Quick command testing inside BetterNotepad
 
-HTML Live Preview
+---
 
-When editing HTML files in CodeEditor mode:
+### FolderManager
 
-View -> Output
+Folder browsing extension featuring:
 
-opens a live HTML preview beside the editor.
+* Open folders directly in BetterNotepad
+* Sidebar-style folder explorer
+* File tree navigation
+* Double-click to open files
+* Explorer integration
+* Folder startup support
 
-Installation
+---
 
-Download the latest installer from Releases:
+## Extension System
 
-BetterNotepadSetup.exe
+BetterNotepad supports custom extensions loaded from:
 
-Run the installer and launch BetterNotepad.
+```text
+%AppData%\BetterNotepad\Extensions
+```
 
-Build:
+Extensions can:
 
-dotnet restore
-dotnet publish -c Release -r win-x64 --self-contained true
-Project Structure
-BetterNotepad/
-├── Assets/
-├── Themes/
-├── Syntax/
-├── MainWindow.xaml
-├── MainWindow.xaml.cs
-├── ThemeManager.cs
-├── FileContextMenuInstaller.cs
-└── BetterNotepad.csproj
-Planned Features
-Better syntax highlighting
-Plugin system
-LAN messaging
-Markdown preview
-Audio support
-Multi-monitor support
-Custom startup layouts
-Terminal integration
-Git integration
-License
+* Add custom menus
+* Create new windows
+* Open tools
+* Access images/files
+* Integrate directly into the editor
 
-MIT License
+This allows developers to create their own plugins without modifying the BetterNotepad source code.
 
-Credits
+---
 
-Built by TANGO using:
+## Built With
 
-- C#
-- WPF
-- AvalonEdit
-- .NET 8
+* C#
+* .NET 8
+* WPF
+* AvalonEdit
+
+---
+
+## Status
+
+BetterNotepad is actively being developed and expanded with new extensions, tools, and customization features.
